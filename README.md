@@ -22,7 +22,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://xico26.github.io/fm-stats-preview-card)
+- [Solution URL](https://xico26.github.io/fm-stats-preview-card)
 
 ## My process
 
