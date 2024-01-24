@@ -8,40 +8,44 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
-<body class="flex flex-col items-center justify-center min-w-full min-h-screen">
-  <div class="w-3/4 h-1/2 grid grid-cols-2 rounded-lg card">
-    <div class="p-12">
-      <h1 class="text-white text-4xl font-bold p-4 fi">
-        Get <span class="accent">insights</span> that help your business grow.
-      </h1>
-      <p class="p-4 white-1">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
-      </p>
-      <div class="flex p-4 mt-12 info">
-        <div class="flex flex-col pr-16">
-          <span class="text-white text-2xl fi font-bold">10k+</span>
-          <span class="white-1">COMPANIES</span>
-        </div>
-        <div class="flex flex-col pr-16">
-          <span class="text-white text-2xl fi font-bold">314</span>
-          <span class="white-1">TEMPLATES</span>
-        </div>
-        <div class="flex flex-col pr-16">
-          <span class="text-white text-2xl fi font-bold">12M+</span>
-          <span class="white-1">QUERIES</span>
+<body class="min-h-full">
+  <main class="flex flex-col items-center justify-center my-10 lg:min-h-screen lg:my-0">
+    <div class="max-w-[80%] h-[90%] grid rounded-lg card lg:flex lg:flex-row-reverse">
+      <div id="right" class="rounded-t-lg lg:rounded-r-lg lg:w-1/2 lg:rounded-l-none">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/image-header-desktop.jpg">
+          <img src="/images/image-header-mobile.jpg" alt="Mobile Header" class="overflow-hidden rounded-t-lg lg:rounded-r-lg lg:rounded-l-none header-img w-full">
+        </picture>
+      </div>
+      <div class="p-8 lg:w-1/2 lg:p-12">
+        <h1 class="text-white text-2xl text-center lg:text-left font-bold py-4 lg:p-4 fi lg:text-4xl">
+          Get <span class="accent">insights</span> that help your business grow.
+        </h1>
+        <p class="py-4 white-1 text-center lg:text-left lg:p-4">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="flex py-4 mt-16 info flex-col lg:flex-row justify-center items-center gap-8 text-center lg:text-left lg:justify-start lg:p-4">
+          <div class="flex flex-col">
+            <span class="text-white text-2xl fi font-bold">10k+</span>
+            <span class="white-1">COMPANIES</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-white text-2xl fi font-bold">314</span>
+            <span class="white-1">TEMPLATES</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-white text-2xl fi font-bold">12M+</span>
+            <span class="white-1">QUERIES</span>
+          </div>
         </div>
       </div>
     </div>
-    <div id="right">
-      <div></div>
+  </main>
+  <footer>
+    <div class="attribution my-8">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://xico26.github.io" target="_blank">Francisco Maia</a>.
     </div>
-  </div>
-
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
